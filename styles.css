@@ -7,13 +7,14 @@
 * {
   margin: 0px;
   padding: 0px;
+  box-sizing: border-box;
 }
 
 body {
   color: #444;
   font-family: sans-serif;
   border-top: 5px solid var(--seablue);
-  position: relative
+  position: relative;
 }
 
 .main-header {
@@ -22,8 +23,8 @@ body {
   margin-bottom: 60px;
 }
 
-.container{
-  width: 80%;
+.container {
+  width: 1200px;
   margin: 0 auto;
 }
 
@@ -35,6 +36,10 @@ nav {
   font-size: 18px;
 }
 
+nav a:link {
+  margin-left: 20px;
+}
+
 article {
   margin-bottom: 60px;
 }
@@ -43,8 +48,7 @@ aside {
   background-color: var(--light-gray);
   border-top: 5px solid var(--seablue);
   border-bottom: 5px solid var(--seablue);
-  padding: 50px 0;
-  width: 500px;
+  padding: 50px 40px;
 }
 
 h1,
@@ -65,6 +69,19 @@ h1::first-letter {
 h2 {
   font-size: 40px;
   margin-bottom: 30px;
+  position: relative;
+}
+
+h2::after {
+  content: 'Trending';
+  background-color: yellow;
+  font-size: 18px;
+  padding: 3px 6px;
+  color: black;
+  text-transform: uppercase;
+  position: absolute;
+  top: -20px;
+  right: -20px;
 }
 
 h3 {
@@ -77,6 +94,7 @@ h4 {
   font-size: 20px;
   text-transform: uppercase;
   text-align: center;
+  margin-bottom: 30px;
 }
 
 p {
@@ -115,6 +133,7 @@ li:last-child {
 
 .related-posts {
   list-style: none;
+  margin-left: 0;
 }
 
 li:first-child,
@@ -159,4 +178,45 @@ a:active {
   position: absolute;
   right: 20px;
   bottom: 20px;
+}
+
+/* Floats */
+.author-img {
+  float: left;
+}
+.author {
+  float: left;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+h1 {
+  float: left;
+}
+nav {
+  float: right;
+}
+
+.clear {
+  clear: both;
+}
+
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+article {
+  width: 825px;
+  float: left;
+}
+
+aside {
+  width: 300px;
+  float: right;
+}
+
+footer {
+  clear: both;
 }
