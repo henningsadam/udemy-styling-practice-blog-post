@@ -8,6 +8,8 @@
     <style>
       .el--1 {
         background-color: blueviolet;
+        grid-column: 2 / span 2;
+        grid-row: 1 / span 2;
       }
       .el--2 {
         background-color: orangered;
@@ -40,9 +42,14 @@
         margin: 40px;
 
         /* CSS GRID */
+        display: grid;
+        grid-template: none / repeat(4, 1fr);
+        gap: 1rem;
       }
 
       .container--2 {
+        display: none;
+
         /* STARTER */
         font-family: sans-serif;
         background-color: black;

@@ -40,7 +40,6 @@ nav {
 
 article {
   margin-bottom: 60px;
-  flex: 1;
 }
 
 aside {
@@ -48,9 +47,6 @@ aside {
   border-top: 5px solid var(--seablue);
   border-bottom: 5px solid var(--seablue);
   padding: 50px 40px;
-  flex: 0 0 350px;
-  /* flex-basis: 350px;
-  flex-shrink: 0; */
 }
 
 h1,
@@ -139,12 +135,6 @@ li:last-child {
   margin-bottom: 15px;
 }
 
-main {
-  display: flex;
-  gap: 30px;
-  align-items: flex-start;
-}
-
 .related-author {
   font-size: 14px;
   font-weight: normal;
@@ -215,47 +205,3 @@ a:active {
   align-items: center;
   justify-content: space-between;
 }
-
-
-
-
-/* Floats */
-/* .author-img {
-  float: left;
-}
-.author {
-  float: left;
-  margin-top: 10px;
-  margin-left: 20px;
-}
-
-h1 {
-  float: left;
-}
-nav {
-  float: right;
-}
-
-.clear {
-  clear: both;
-}
-
-.clearfix::after {
-  content: '';
-  display: block;
-  clear: both;
-}
-
-article {
-  width: 825px;
-  float: left;
-}
-
-aside {
-  width: 300px;
-  float: right;
-}
-
-footer {
-  clear: both;
-} */
